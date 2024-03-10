@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Check Out</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src='main.js'></script>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container center ">
+        
+        <div class="row">
+
+            <div class="card col-md-5 mx-4" style="background-color: rgb(46, 51, 56); border-color: rgb(73, 73, 73);">
+
+                <div class="card-header" style="font-size: 26px; color: rgb(255, 255, 255)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                    Your Details
+                </div>
+
+                <div class="card-body">
+                    <div class="form-group mb-3">
+                        <label class="text-light" for="firstName">First Name</label>
+                        <input type="text" class="form-control bg-dark text-light rounded-start"
+                            placeholder="Enter your first name" id="firstName" style="max-width: 300px;">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="text-light" for="lastName">Last Name</label>
+                        <input type="text" class="form-control bg-dark text-light rounded-start"
+                            placeholder="Enter your last name" id="lastName" style="max-width: 300px;">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="text-light">Email Address</label>
+                        <div class="input-group" style="max-width: 350px;">
+
+
+                            <span class="input-group-text bg-dark text-light" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z">
+                                    </path>
+                            </svg>
+                            </span>
+                            <input type="text" class="form-control bg-dark text-light rounded-start"
+                                placeholder="example@gmail.com">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="text-light">Country</label>
+                        <div class="input-group" style="max-width: 350px;">
+                            <span class="input-group-text bg-dark text-light" id="basic">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                                </svg>
+                            </span>
+
+                            <input type="text" class="form-control bg-dark text-light rounded-start"
+                                placeholder="Enter your Country">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+
+                        <label class="form-check-label text-light" for="exampleCheck1">
+                            
+                            <input type="checkbox" class="form-check-input bg-dark" id="exampleCheck1">
+
+                            Send me updates & announcements
+                            via email.</label>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-group text-light" for="check2"> <input type="checkbox"
+                                class="form-check-input bg-dark" id="check2"> I agree to Merge's Terms & Conditions &
+                            Privacy Policy as the authorised seller and merchant of record. By ticking this box you
+                            confirm you’re over the age of 16 or have a guardian's permission, and, to allow us to
+                            provide digital items immediately, waive any rights of withdrawal or refund.</label>
+                    </div>
+
+                    <div class="card-footer mx-2">
+
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-dark" type="button">Continue To Payment</button>
+                        </div>
+
+                            <br>
+                            
+                            <svg class="text-light" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                               <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                            </svg>
+                        
+                            <label class="fs-5 text-light fw-bold">Secured by :</label>
+                            <br>
+                            <br>
+
+                            <img data-v-42059594="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAZCAYAAAD5VyZAAAAEkklEQVRoge1avY7jNhDmIgiwOCCAsggCW0QOegT1V1h5AwOpUlnAlinWSJEyVpXiipwvXQJI8ht432D1BjaQ9Lu1tQf7Gmt3k7vvCg1takz5R7s++3L6AALmkENxZj4OJZpC1KhRhqmwrFshO6mwe6mwh6mQVxNhxxPRvJgI6ZbpZXHDySLZmYfyVRbJqyySV1ls9+7i5kUWN5yPaEKNKpiKhjMRdpwKiXVlIuzrWyE7Su8hlu48tIdZJLGuzCN7lMUN74Am1ihDKprdVMjppuDr5c1p4++H377+Y1PgV4gQ2kPElnVom2sQJsIe7BJ4Ve5ePAPOT3D3+tudCKCyQU2CI8CtkP3Kwe+IvJyfIPuzWYkEh7b/cwGAFgCnIExFw6sS/LffnS2DT+Xdz6c7EyCLJLLQDg7ikR0AwAPQW3HgJwTkCArCVMikCgHe/fDFCgHQEbj//ZtqJDjyLwQAATnQO/RcqmKFAE+5+lX575dne8kCACyVwqi0ALhau0uyVom+o7dTf5f1WYyhr3Sqx+TAC/5sPj4Ai7W1aGyrRLdlkrM5uVpfh/nE0vrp83aYbpEAVff+++9PSwmAjqhGgMi+NkZ+aYxHBoxQRAzgFZNdMd0eax9RSbQ+Q6wi0BzHoev6rG2KIjkB4JrkADAgeVuTKVxqweVzitm8PCYHlsHWZSu6Qojq6f/9jydrCbCPbUAzdkaO8wAkmoE+yQZU77LgJNSu6yVs7AD5qvHUb619MS7VXaY7IF0XwBh5wC1GIKWrstgUwI1mTwDAJ50+6fSprU19F0HUnj1WtpFcbVcDTXdsIsDOwU+FXBt8dATuX55VJYC3BQH6BtmlJrOYkxJynGXoowjQpvoQpjflolM9JlfE0Mdv631VkLYZT2tfzM9gb8DqPus3NTzP+WgE+PfXr/ZJgIDJ18pMjiR5gmIaVytOYYRiGi8jQIJyqCxkCuYAAEpsdU12GWxTPuFzArSFUuqrVMjZXjJA9S3A45PWJl+VAAmAa9ZuIV8liUGuUvGMEWRTBvAMxdHmw5+1TQYYrvPBGgLMAIyYzJgBjuodYN2p4CMI0KV6jOXeq16uEs05PSz3bAv5Hj7WxlRpvUf9PSaPSc8C0AGtfm0+CZujWuUjLL8QOgDa1H6pPU+95asX4E0E6Gu6jklXCLGnr4Dzk6qfgTdlwX8MAZgzFcbI3wsUAXyY4WtjWMhXlg5FGL59AMXsUahrct8wZqI9b8zalB2bCGBhdWsaM11fTIR0j+UcYB7JlT3LYNQirTJibCNzkWeDNpYrSt/jHQpIQP0K+tocVB/TGYJPujwgHu/PntumMduGdk9vQ3FrUT4xZs4Nurl9EyHHVUjwpCeBoZwd+0ng/xaVs8Dz1Sywr1PAGnvGU/wb+P6nL5H9VeHfwFCOhchvEh3YDZ83HnMf4DHBr+8DHBHoRtBOZwNvThv/PLw8C3dP/fagDv4Rgu4EbpEN7JtbIX2l9xBLdx7Zl1sEP6nvBH4CoFvBfirsgA6MkpwYze7GW8Gh9LPQDrJIJlkkkyy0g7uw2a33+Ro1jggfAK2nr/VWEsYgAAAAAElFTkSuQmCC
+                            " class="img-fluid mr-3">
+
+                            <img data-v-42059594="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAVCAYAAAAZ6IOkAAACoklEQVRYhZ1YW5WjQBCNhEhAQhxsO1gcBAeLg8XB4CA4GBwQB8FBcDA4uPtBM6enuPVg65z+ST37Uo+uXAA8AEzO+QCQLg4B+CS6beZViu0rsXMFcM/23vhJrxzznekKGx/EX68J1wB6ACt0+gJQGU6TonfL/JrwVmLnT/YVIfXDZLDoPTSdUrkBMCsGOkNvIPJzwe8I/ylsPIKXBwA4d7CoigBxBbB4QQt5Rk0h8yT8ruC30ctnmlks2dbk6NYuCNlQT5RpKikXWIUMo1TwWQms2DIo5bOX7QxW25fv3uNRx3SZMa3GWSN7E7m+4N8sW4avJH0VNmlTBC9LSc8QCNmgG5hxgaqQYTW6OHwgmrYFMDhm1AjS8M8YHUlgnZBhyI9ChpXWEADyC8D9RLwMzEa5xy1qlNX6WPC1hlgLO2xctcKONZ4nxN4pb6G35t/ZZGqiILBafjkgLcQOoyRkWKCSPqH3ApZNg8GjjVUDQq0nOF/YCIDWZBCIFwMCvCzrzGMZ+zwDAqunBKfjF/osW6wZn8DfKCUNQoeNxUXIHB6AZ0Bgl2jBkR+IPgPRTUVsDc3qE1UhyzKoF/ZYvCkKAvviI/jj5tBxwd8QTdD3FfoTPhVyzMcDwN/iTESmNdwfgvHSEyApDn16xMbTxRyfe717e4JFwxkQIq+whuixzRFEpjJ8azvFvp1O/3H5nV6aXxaIh/ZhJc56kc1xnzATtrT9DeAXtv8LHoq/JetG9gSTzoDgOdOWGW9z1MrFo70U6PqODXx2WDzpDBBWX6gUHdY864Kv1btFQwEgs98Yd6CT7gwIWl8YFXkte6pCJvI42mnFTwBZia6w/3JjoNP4NQM1tnSSJxkOpezBIbYRvKeqHIczNvAP22T+XdrvAveQOsM/YHy9FwTtLoQAAAAASUVORK5CYII=
+                            " class="img-fluid mr-3">
+                            
+                            <img data-v-42059594="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAWCAYAAAC1zAClAAADWElEQVRYhe2Yv2sUURDHU8fCq7TdgFY29w+IZ2N9VjaCJ3Y2BhtBAh5iacyBjV3uHwhurCKIWUgTBMkVRuzuChEs9M6ABIPhY7Hvhdm52d23F8Im4BceZOfNzPvO9/28zM0JAPPA5ZI2P/cf1QEcEIYD4G3dfM8UAoWVGNXN+UwAuDeDuABLdXM/9QBezijudt3cTz2AbUO4fWCvoO1XERdoAE9y2gMgOsESJY+ogMed4/AQee5L43dD3G8B7Q2wEDhwJ2AndGYtLBTA4knwAJoi/rPsmKjkfwPFXQeeBw7eDShqDDSqFlYFQC+Exwx5WyJ+Q3Zo/AkQ9guw5tqFgMETkT92tiYQq7FbVQurAsWjJ3gkx+FBdvE89sYbhrh7AeJuCHGvBAy+I/J3hV3OeKYo0vPxmmsNZ/PfkRDm6NsYV/uPxVidHHEAmoE8/HdfxN72gUuGuL9KhN0Swq4FzmyegHKbToRgmwav1+LvxMjbVGPK3HEJDynOSPDYUTFjYFV8+9UvV/5Vn9R6KfzAFnUXeIcQFlgOELap8q+S3qoryt4nXSVjytF1uWNtc3a5IyYur94lK47HqsGjWZGH9D3vSewaAZ+AD65tkQq6TlZU324FiNsOIDkifa5tCtvAFdlgett2XG75CtlxtoYqdtHwzcPAxcsVGzseEdMXYtv5e0xk4fqlcIgtotVeAecCxC17KfgVG0mSqJcD6QR4tISQEhHZ4yOegYfcaSODh0ST7I5IpOOhcv5NmLDLhL9x5Xk2cGRaTJ+R8g2aGHmGor8h7PJokMJOlJ88F4t4yEmweBzB4N3zTheZxs8SQR8B10NEzSmqW+AnSQ4L+iaqL2+7t5Wf+WIxeEhxi3gMDP+ud7xpEPpqiBq0QgvI5has/PTFNyS9cPSNnag4fTQA9Et4tAp46IuvkAfZxdPySR4apD6ixJ1FUEE0Uvlzi3L+fWzIu6FnxMkCrXNST1xUwkP/qJC5PbrOdziVF3hhBL8nK+7TSmpOk4wc0QRjNeXEdEVMTLqS2sKmz0j9bGqV8Ih1v+HfyOHR0TxcX4KcdNJfGNuq6SPhUYggdYLsdp1a1acCwIIhbuk7tk6QvUwGdfPJhdsKd1U70f9SHRfAM9KHfQ+4VDcfj39Lw3A45H0toQAAAABJRU5ErkJggg==
+                            " class="img-fluid mr-3">
+
+                    </div>
+
+
+                </div>
+            </div>
+            
+            <div class="form-group col-md-5 mx-5 ">
+        
+                <div class="card" style="background-color: rgb(46, 51, 56); border-color: rgb(73, 73, 73);">
+                
+                    <div class="card-header" style="font-size: 26px; color: rgb(255, 255, 255)">
+                        
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
+                            <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+                        </svg>
+
+                        Your Order
+
+                    </div>
+                    
+                    <div class="card-body">
+        
+                        <table class="table align-middle table-dark">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>55" OLED 4K S95C</td>
+                                <td>57 $</td>
+                                <td>2</td>
+                                <td>114$</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Phone Tecno Spark Go 2023 4+3/64 Gb</td>
+                                <td>92 $</td>
+                                <td>1</td>
+                                <td>92$</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Side By Side Nfe3620X No Frost Total </td>
+                                <td>1295$</td>
+                                <td>1</td>
+                                <td>1295$</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <label class="form-group fs-4 fw-bold text-light d-flex flex-row-reverse p-2">Total: 1501$</label>
+                    </div>
+                </div>
+
+                <div class="card my-4" style="background-color: rgb(46, 51, 56); border-color: rgb(73, 73, 73);">
+                    <div class="card-header" style="font-size: 26px; color: rgb(255, 255, 255)">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                        </svg>
+                        Support A Creator
+                    
+                    </div>
+
+                    <div class="card-body">
+                    
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-light rounded-start border-dark"
+                            placeholder="Your purchase will help support">
+                            <button class="btn btn-dark" type="button">Confirm</button>
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                <div class="card my-4" style="background-color: rgb(46, 51, 56); border-color: rgb(73, 73, 73);">
+                    <div class="card-header" style="font-size: 26px; color: rgb(255, 255, 255)">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
+                            <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+                        </svg>
+
+                        Redeem Coupon / Gift Card
+                    
+                    </div>
+
+                    <div class="card-body">
+                    
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-light rounded-start border-dark"
+                            placeholder="Enter coupon/gift card code here">
+                            <button class="btn btn-dark" type="button">Confirm</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+    <script src="main.js"></script>   
+</body>
+
+</html>
